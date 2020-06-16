@@ -20,7 +20,7 @@ services:
       - '80:80'
       - '443:443'
     volumes:
-      - 'moodle_data:/bitnami'
+      - './moodle_data:/bitnami'
     depends_on:
       - mariadb
 volumes:

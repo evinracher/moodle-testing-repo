@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   mariadb:
     image: 'docker.io/bitnami/mariadb:10.1-debian-10'
@@ -20,7 +20,7 @@ services:
       - '80:80'
       - '443:443'
     volumes:
-      - '~/data_moodle:/bitnami'
+      - 'moodle_data:/bitnami'
     depends_on:
       - mariadb
 volumes:
